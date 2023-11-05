@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: "rate-limiter"
+server:
+  port: 8080
+limiter:
+  max_requests: 2
+  period: 60_000 # 1 min
+logging:
+  level:
+    com.github.yuliyadzemidovich.ratelimiter: DEBUG
